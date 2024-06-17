@@ -1,0 +1,220 @@
+// Colors
+$nutmeg: hsl(14, 45%, 36%);
+$dark-raspberry: hsl(332, 51%, 32%);
+
+$white: hsl(0, 0%, 100%);
+$rose-white: hsl(330, 100%, 98%);
+$eggshell: hsl(30, 54%, 90%);
+$light-grey: hsl(30, 18%, 87%);
+$wenge-brown: hsl(30, 10%, 34%);
+$dark-charcoal: hsl(24, 5%, 18%);
+
+// Layout
+$mobile-w: 375px;
+$desktop-w: 1440px;
+
+// Font Size & Weight
+$body: 1.6em;
+
+$regular: 400;
+$semi-bold: 600;
+$bold: 700;
+
+@font-face {
+    font-family: outfit;
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: young-serif;
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+
+// Mobile
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    background-color: $white;
+    min-width: 32em;
+    max-width: 70.9em;
+}
+
+.content {
+    padding: 3.2em;
+}
+
+hr {
+    border-top: 0.1em solid $light-grey;
+    margin: 2.5em 0 2.5em 0;
+}
+
+// Text Styling
+@mixin font($family, $weight, $size, $color) {
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color
+}
+
+h1 {
+    @include font(young-serif, $regular, 3.2em, $dark-charcoal);
+    line-height: 1.05;
+}
+
+h2 {
+    @include font(young-serif, $regular, 2.5em, $nutmeg)
+}
+
+h3 {
+    @include font(outfit, $bold, 1.8em, $dark-raspberry)
+}
+
+h1, h2, h3 {
+    margin-bottom: 1.2rem;
+}
+
+p {
+    margin-bottom: 2em;
+    line-height: 150%;
+}
+
+p, li, th, td {
+    @include font(outfit, $regular, $body, $wenge-brown);
+    strong {
+        font-weight: $bold;
+    }
+}
+
+.prep-time {
+    background-color: $rose-white;
+    border-radius: 1em;
+    padding: 2.2em;
+    margin-bottom: 2em;
+    ul {
+        padding: 0 2em 0 2em;
+        li {
+            padding-left: 1em;
+            line-height: 150%;
+            margin-bottom: 0.5em;
+        }
+        ::marker {
+            color: $dark-raspberry;
+            font-size: 0.8em;
+        } 
+    }
+}
+
+.ingredients {
+    ul {
+        padding: 0 2em 0 2.1em;
+        li {
+            padding-left: 1em;
+            line-height: 150%;
+            margin-bottom: 0.5em;
+        }
+        ::marker {
+            color: $nutmeg;
+            font-size: 0.8em;
+        }
+    }
+}
+
+.instructions {
+    ol {
+        padding-left: 2.2em;
+        li {
+            padding-left: 1em;
+            line-height: 150%;
+            margin-bottom: 0.5em;
+        }
+        ::marker {
+            color: $nutmeg;
+            font-size: $body;
+            font-weight: $bold;
+        }
+    }
+}
+
+.nutrition {
+    p {
+        margin-bottom: 1em;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    tr {
+        height: 4em;
+        &:not(:last-child) {
+            border-bottom: 0.1em solid $light-grey;
+        }
+    }
+
+    th, td {
+        text-align: left;
+        padding-left: 2em;
+    }
+
+    th {
+        width: 43%;
+    }
+
+    td {
+        color: $nutmeg;
+    }
+}
+
+.attribution { 
+    @include font(outfit, $regular, 1.1em, $wenge-brown);
+    text-align: center; 
+    padding: 2em;
+    background-color: $eggshell;
+    a {
+        color: $nutmeg;
+    }
+}
+
+
+// Desktop
+@media only screen and (min-width: 70em){
+    
+    body {
+        background-color: $eggshell;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        border-radius: 1.5em;
+        margin: 10em;
+    }
+
+    img {
+        border-radius: 1em;
+        width: calc(100% - 6.4em);
+        margin: 3.2em 3.2em 0 3.2em
+    }
+}
+    
+
+
+
