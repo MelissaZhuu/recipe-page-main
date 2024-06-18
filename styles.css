@@ -22,7 +22,6 @@ img {
 
 .card {
   background-color: hsl(0, 0%, 100%);
-  min-width: 32em;
   max-width: 70.9em;
 }
 
@@ -69,7 +68,7 @@ p {
 p, li, th, td {
   font-family: outfit;
   font-weight: 400;
-  font-size: 1.6em;
+  font-size: 16px;
   color: hsl(30, 10%, 34%);
 }
 p strong, li strong, th strong, td strong {
@@ -118,7 +117,7 @@ p strong, li strong, th strong, td strong {
 }
 .instructions ol ::marker {
   color: hsl(14, 45%, 36%);
-  font-size: 1.6em;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -159,7 +158,7 @@ p strong, li strong, th strong, td strong {
   color: hsl(14, 45%, 36%);
 }
 
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 700px) {
   body {
     background-color: hsl(30, 54%, 90%);
     display: flex;
@@ -170,6 +169,7 @@ p strong, li strong, th strong, td strong {
   .card {
     border-radius: 1.5em;
     margin: 10em;
+    min-width: 32em;
   }
   img {
     border-radius: 1em;

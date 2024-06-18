@@ -14,7 +14,7 @@ $mobile-w: 375px;
 $desktop-w: 1440px;
 
 // Font Size & Weight
-$body: 1.6em;
+$body: 16px;
 
 $regular: 400;
 $semi-bold: 600;
@@ -50,7 +50,6 @@ img {
 
 .card {
     background-color: $white;
-    min-width: 32em;
     max-width: 70.9em;
 }
 
@@ -193,7 +192,7 @@ p, li, th, td {
 
 
 // Desktop
-@media only screen and (min-width: 70em){
+@media only screen and (min-width: 700px){
     
     body {
         background-color: $eggshell;
@@ -206,6 +205,7 @@ p, li, th, td {
     .card {
         border-radius: 1.5em;
         margin: 10em;
+        min-width: 32em;
     }
 
     img {

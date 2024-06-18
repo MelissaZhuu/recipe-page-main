@@ -19,11 +19,12 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Screenshots
 
 Desktop
-![](./assets/images/recipe-page-desktop-screenshot.png)
+![](./assets/images/desktop-screenshot.png)
 
 Mobile
-![](./assets/images/recipe-page-mobile-screenshot-1.png)
-![](./assets/images/recipe-page-mobile-screenshot-2.png)
+![](./assets/images/mobile-screenshot-1.png)
+![](./assets/images/mobile-screenshot-2.png)
+![](./assets/images/mobile-screenshot-3.png)
 
 ### Links
 
