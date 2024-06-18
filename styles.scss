@@ -59,7 +59,7 @@ img {
 
 hr {
     border-top: 0.1em solid $light-grey;
-    margin: 2.5em 0 2.5em 0;
+    margin: 3em 0 3em 0;
 }
 
 // Text Styling
@@ -71,16 +71,16 @@ hr {
 }
 
 h1 {
-    @include font(young-serif, $regular, 3.2em, $dark-charcoal);
-    line-height: 1.05;
+    @include font(young-serif, $regular, 3.6em, $dark-charcoal);
+    line-height: 1;
 }
 
 h2 {
-    @include font(young-serif, $regular, 2.5em, $nutmeg)
+    @include font(young-serif, $regular, 2.8em, $nutmeg)
 }
 
 h3 {
-    @include font(outfit, $bold, 1.8em, $dark-raspberry)
+    @include font(outfit, $bold, 2em, $dark-raspberry)
 }
 
 h1, h2, h3 {
@@ -172,7 +172,7 @@ p, li, th, td {
     }
 
     th {
-        width: 43%;
+        width: 47%;
     }
 
     td {
@@ -205,13 +205,13 @@ p, li, th, td {
     .card {
         border-radius: 1.5em;
         margin: 10em;
-        min-width: 32em;
+        min-width: 32rem;
     }
 
     img {
         border-radius: 1em;
-        width: calc(100% - 6.4em);
-        margin: 3.2em 3.2em 0 3.2em
+        width: calc(100% - 7em);
+        margin: 3.5em 3.5em 0 3.5em
     }
 }
     
